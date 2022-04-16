@@ -1,0 +1,15 @@
+@function em($px) {
+    $result: math.div($px, 18) + em;
+    @return $result;
+}
+
+
+.text {
+    font-size: em(47);
+}
+
+.title {
+    padding: em(50);
+}
+
+fafik = 5 + 5

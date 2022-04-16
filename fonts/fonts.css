@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Poppins"; 
+    src: url("../fonts/poppins-v19-latin-regular.woff") format("woff"), 
+    url("../fonts/poppins-v19-latin-regular.woff2") format("woff2");
+    font-style: normal; 
+    font-weight: normal;
+} 
+
+@font-face {
+    font-family: "Poppins"; 
+    src: url("../fonts/poppins-v19-latin-regular.woff") format("woff"), 
+    url("../fonts/poppins-v19-latin-regular.woff2") format("woff2");
+    font-style: normal; 
+    font-weight: normal;
+}

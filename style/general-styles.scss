@@ -1,0 +1,247 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (min-width: 375px) and (max-width: 1599.98px) { 
+        width: calc(100% - 40px);
+    }
+}
+
+.horizontal-row {
+    display: flex;
+    align-items: center;
+}
+
+.row-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 79px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 576px) and (max-width: 991.98px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (max-width: 575.98px) and (min-width: 375px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $GREY_LINE;
+    padding-bottom: 50px;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+}
+
+.service__list--info {
+    padding: 15px 0;
+    list-style-type: disc;
+    position: relative;
+    
+    @media (max-width: 575.98px) and (min-width: 375px) {
+        list-style-type: none;
+    }
+}
+
+.drop-info {
+    position: absolute;
+    display: none;
+    border: 1px solid $HOVER_RED;
+    font-size: 10px;
+    width: 150px;
+    height: 50px;
+    padding: 8px 0 0 8px;
+    border-radius: 4px;
+    background-color: white;
+    bottom: 40px;
+    left: 250px;
+}
+
+.service__list--info:hover .drop-info {
+    display: block;
+}
+
+.section {
+    margin-top: 60px;
+}
+
+.left-space {
+    padding-left: 100px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 999;
+    padding: 20px;
+}
+
+.modal__close {
+    background: none;
+    float: right;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+@media (max-width: 1564px) {
+    .column {
+        flex-direction: column;
+    }
+
+    .left-space {
+        padding-left: 0;
+    }
+}
+
+.btn-group {
+    margin-top: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    background-color: $WHITE;
+    border: 1px solid #BDBDBD;
+    cursor: pointer;
+
+    @media (max-width: 575.98px) and (min-width: 375px) {
+        padding: 10px;
+    }
+}
+
+.btn-group:active {
+    background-color: $HOVER_RED;
+    color: $WHITE;
+    cursor: pointer;
+}
+
+.text-group {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $BLACK;
+
+    @media (min-width: 576px) and (max-width: 991.98px) {
+        font-size: 16px;
+    }
+}
+
+.text-group::before {
+    content: "";
+    border-right: 9px solid $HOVER_RED;
+    border-radius: 2px;
+    height: 20px;
+}
+
+.text-service-lenght {
+    font-size: 14px;
+    color: $DARK_GREY;
+}
+
+.text-service-lenght::before {
+    content: '|';
+    background-image: url('../images/img__main/clock.svg');
+    background-position-x: left;
+    background-position-y: -0.52px;
+    background-repeat: no-repeat;
+    padding-left: 17px;
+    color: $LIGHT_GREY;
+}
+
+.text-info {
+    padding: 20px 0;
+
+    @media (max-width: 575.98px) and (min-width: 375px) {
+        font-size: 12px;
+    }
+}
+
+.main__card--text {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main__card--text span {
+    background-color: $HOVER_RED;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin: 16px;
+    font-weight: normal;
+}
+
+.price-text {
+    font-size: 24px;
+    font-weight: 700;
+
+    @media (max-width: 575.98px) and (min-width: 375px) {
+        font-size: 20px;
+    }
+}
+
+.price-btn {
+    text-transform: uppercase;
+    font-weight: 400;
+    border-style: none;
+    border-radius: 5px;
+    background-color: $HOVER_RED;
+    color: $WHITE;
+    padding: 15px 15px;
+    cursor: pointer;
+    width: 127px;
+    margin: 28px 0;
+
+    @media (max-width: 575.98px) and (min-width: 375px) {
+        padding: 10px 8px;
+    }
+}
+
+#colored-text {
+    color: $HOVER_RED;
+    border-bottom: 1px solid $GREY_LINE;
+    padding-bottom: 25px;
+}
+
+.menu-list__item {
+    padding: 20px;
+}
+
+.menu-list__item a {
+    color: red;
+}
+
+.menu-list__item a:hover {
+    color: white;
+}
